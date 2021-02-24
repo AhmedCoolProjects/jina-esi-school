@@ -6,7 +6,7 @@ import TextField from "@material-ui/core/TextField";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { Button, IconButton } from "@material-ui/core";
 
-function Login_() {
+function LoginP() {
   const [email, setEmail] = useState(null);
   const [emailR, setEmailR] = useState(null);
   const [password, setPassword] = useState(null);
@@ -108,7 +108,7 @@ function Login_() {
   );
 }
 
-export default Login_;
+export default LoginP;
 
 const useStyles = makeStyles((theme) => ({
   root: {

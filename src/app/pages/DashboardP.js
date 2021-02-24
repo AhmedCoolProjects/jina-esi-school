@@ -1,29 +1,29 @@
 import React from "react";
-import PostCard__ from "../components/PostCard__";
-import CarouselleStart__ from "../components/CarouselleStart__";
+import PostCardC from "../components/PostCardC";
+import CarouselleStartC from "../components/CarouselleStartC";
 import assembly from "../assets/assembly.svg";
 import python from "../assets/python.svg";
 import studyr from "../assets/studyr.svg";
 import chatr from "../assets/chatr.svg";
 import about from "../assets/logor.svg";
-import CardItem__ from "../components/CardItem__";
+import CardItemC from "../components/CardItemC";
 import customsvgr from "../assets/customsvgr.svg";
-import Footer__ from "../components/Footer__";
+import FooterC from "../components/FooterC";
 
-function Dashboard_() {
+function DashboardP() {
   return (
     <div style={{ position: "relative" }}>
       {/* background image for dashboard */}
       <div className="bg_dshbrd">
         {/* last 2 Posts */}
         <div className="two_posts">
-          <PostCard__
+          <PostCardC
             image={assembly}
             title="first title"
             isLiked={true}
             likes={20}
           />
-          <PostCard__
+          <PostCardC
             image={python}
             title="Second title"
             isLiked={false}
@@ -35,21 +35,21 @@ function Dashboard_() {
       {/* Cards For Pages */}
       <div className="cards_item_layout">
         <div className="cards_item_layout_top">
-          <CardItem__ title="Study Room" image={studyr} />
-          <CardItem__ title="Chat Room" image={chatr} />
+          <CardItemC title="Study Room" image={studyr} />
+          <CardItemC title="Chat Room" image={chatr} />
         </div>
         <div className="cards_item_layout_bottom">
-          <CardItem__ title="Skills to Devolope" image={customsvgr} />
-          <CardItem__ title="about" image={about} />
+          <CardItemC title="Skills to Devolope" image={customsvgr} />
+          <CardItemC title="about" image={about} />
         </div>
       </div>
 
       {/* Footer */}
-      <Footer__ />
+      <FooterC />
       {/* Carouselle Start */}
-      <CarouselleStart__ />
+      <CarouselleStartC />
     </div>
   );
 }
 
-export default Dashboard_;
+export default DashboardP;

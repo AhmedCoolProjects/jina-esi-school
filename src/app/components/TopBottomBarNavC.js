@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
 // icons list
 const iconsList1 = [<HomeIcon />, <ForumIcon />, <SettingsIcon />];
 
-export default function TopBottomBarNav__() {
+export default function TopBottomBarNavC() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [state, setState] = React.useState(false);

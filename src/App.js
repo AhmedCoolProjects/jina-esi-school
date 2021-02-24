@@ -1,15 +1,15 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import TopBottomBarNav__ from "./app/components/TopBottomBarNav__";
-import Dashboard_ from "./app/pages/Dashboard_";
-import Login_ from "./app/pages/Login_";
-import About_ from "./app/pages/About_";
+import TopBottomBarNavC from "./app/components/TopBottomBarNavC";
+import DashboardP from "./app/pages/DashboardP";
+import LoginP from "./app/pages/LoginP";
+import AboutP from "./app/pages/AboutP";
 import "./base.css";
 import { selectUser } from "./features/userSlice";
-import ChatRoom_ from "./app/pages/ChatRoom_";
-import Room_ from "./app/pages/Room_";
-import Profile_ from "./app/pages/Profile_";
+import ChatRoomP from "./app/pages/ChatRoomP";
+import RoomP from "./app/pages/RoomP";
+import ProfileP from "./app/pages/ProfileP";
 
 function App() {
   const user = useSelector(selectUser);
@@ -17,27 +17,27 @@ function App() {
     <div className="app">
       {true ? (
         <Router>
-          <TopBottomBarNav__ />
+          <TopBottomBarNavC />
           <Switch>
             <Route exact path="/">
-              <Dashboard_ />
+              <DashboardP />
             </Route>
             <Route path="/about">
-              <About_ />
+              <AboutP />
             </Route>
             <Route path="/chatRoom">
-              <ChatRoom_ />
+              <ChatRoomP />
             </Route>
             <Route path="/room">
-              <Room_ />
+              <RoomP />
             </Route>
             <Route path="/profile">
-              <Profile_ />
+              <ProfileP />
             </Route>
           </Switch>
         </Router>
       ) : (
-        <Login_ />
+        <LoginP />
       )}
     </div>
   );

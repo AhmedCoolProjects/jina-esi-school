@@ -17,7 +17,7 @@ const styles = {
   },
 };
 
-export default function CarouselleStart__() {
+export default function CarouselleStartC() {
   const StyledSlide = withStyles(styles)(Slide);
   const [state, setState] = useState(TramRounded);
   return (
@@ -36,7 +36,7 @@ export default function CarouselleStart__() {
         style={{ position: "absolute" }}>
         {/* slide for the Blogs page */}
         <StyledSlide
-          media={<img src={webpage} height="80%" />}
+          media={<img alt="webpage" src={webpage} height="80%" />}
           mediaBackgroundStyle={{ backgroundColor: deepPurple[400] }}
           style={{ backgroundColor: deepPurple[600] }}
           title="New Posts Fro Each Subject You Will Need"
@@ -44,7 +44,7 @@ export default function CarouselleStart__() {
         />
         {/* Slide for the Subjects page */}
         <StyledSlide
-          media={<img src={datascience} height="80%" />}
+          media={<img alt="datascience" src={datascience} height="80%" />}
           mediaBackgroundStyle={{ backgroundColor: blue[400] }}
           style={{ backgroundColor: blue[600] }}
           title="want To Revise Effectifly And Smart?"
@@ -52,7 +52,7 @@ export default function CarouselleStart__() {
         />
         {/* slide for the Chat page */}
         <StyledSlide
-          media={<img src={chat} height="80%" />}
+          media={<img alt="chat" src={chat} height="80%" />}
           mediaBackgroundStyle={{ backgroundColor: deepPurple[400] }}
           style={{ backgroundColor: deepPurple[600] }}
           title="Let un discuss, you ll find here just students like you! "
@@ -60,7 +60,7 @@ export default function CarouselleStart__() {
         />
         {/* slide for the subject room page */}
         <StyledSlide
-          media={<img src={study} height="80%" />}
+          media={<img alt="study" src={study} height="80%" />}
           mediaBackgroundStyle={{ backgroundColor: deepOrange[400] }}
           style={{ backgroundColor: deepOrange[600] }}
           title="Read, Think, Resolve and Check !"
@@ -68,7 +68,7 @@ export default function CarouselleStart__() {
         />
         {/* slide for the settings page */}
         <StyledSlide
-          media={<img src={settings} height="80%" />}
+          media={<img alt="settings" src={settings} height="80%" />}
           mediaBackgroundStyle={{ backgroundColor: deepOrange[400] }}
           style={{ backgroundColor: deepOrange[600] }}
           title="Let the app as comfortable as you like"

@@ -11,7 +11,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { IconButton } from "@material-ui/core";
 
-export default function PostCard__({ image, title, isLiked, likes }) {
+export default function PostCardC({ image, title, isLiked, likes }) {
   const classes = useStyles();
   const text =
     " Lizards are a widespread group of squamate reptile Lizards are a widespread group of squamate reptile";

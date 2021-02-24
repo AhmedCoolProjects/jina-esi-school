@@ -1,7 +1,7 @@
 import React from "react";
 
-function ChatRoom_() {
+function ChatRoomP() {
   return <div></div>;
 }
 
-export default ChatRoom_;
+export default ChatRoomP;

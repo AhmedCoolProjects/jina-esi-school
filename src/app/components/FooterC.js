@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         : theme.palette.grey[800],
   },
 }));
-function Footer__() {
+function FooterC() {
   const classes = useStyles();
   return (
     <footer className={classes.footer}>
@@ -44,4 +44,4 @@ function Footer__() {
   );
 }
 
-export default Footer__;
+export default FooterC;

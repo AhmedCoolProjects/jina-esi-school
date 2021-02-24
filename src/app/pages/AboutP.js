@@ -1,7 +1,7 @@
 import React from "react";
 
-function About_() {
+function AboutP() {
   return <div>this is the about fct</div>;
 }
 
-export default About_;
+export default AboutP;

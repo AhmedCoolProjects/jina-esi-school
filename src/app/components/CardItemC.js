@@ -6,7 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 
-export default function CardItem__({ image, title }) {
+export default function CardItemC({ image, title }) {
   const classes = useStyles();
 
   return (
