@@ -24,4 +24,6 @@ yarn-error.log*
 /public
 src/app/backend
 src/App.css
-src/logo.svg
+src/logo.
+/src/app/assets
+yarn.lock

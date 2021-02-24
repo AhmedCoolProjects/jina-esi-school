@@ -20,8 +20,10 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-
+import HomeIcon from "@material-ui/icons/Home";
+import ForumIcon from "@material-ui/icons/Forum";
+import SettingsIcon from "@material-ui/icons/Settings";
+import FunctionsIcon from "@material-ui/icons/Functions";
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -92,6 +94,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// icons list
+const iconsList1 = [<HomeIcon />, <ForumIcon />, <SettingsIcon />];
+
 export default function TopBottomBarNav__() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -120,23 +125,21 @@ export default function TopBottomBarNav__() {
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}>
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
+        {["Dashboard", "Chat Rooms", "Settings"].map((roomName, index) => (
+          <ListItem button key={index}>
+            <ListItemIcon>{iconsList1[index]}</ListItemIcon>
+            <ListItemText primary={roomName} />
           </ListItem>
         ))}
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
+        {["Assembly", "Python", "Graph Theory"].map((roomName, index) => (
+          <ListItem button key={index}>
             <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <FunctionsIcon />
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <ListItemText primary={roomName} />
           </ListItem>
         ))}
       </List>
@@ -170,6 +173,7 @@ export default function TopBottomBarNav__() {
       <MenuItem onClick={handleMenuClose}>My Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>Settings</MenuItem>
       <MenuItem onClick={handleMenuClose}>More Apps</MenuItem>
+      <MenuItem onClick={handleMenuClose}>About</MenuItem>
     </Menu>
   );
 
@@ -215,7 +219,7 @@ export default function TopBottomBarNav__() {
     <div className={classes.grow}>
       {/* this is the topBar */}
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar style={{ backgroundColor: "#1867cf" }}>
           <IconButton
             edge="start"
             onClick={toggleDrawer(true)}
